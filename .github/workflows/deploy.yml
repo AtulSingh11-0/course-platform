@@ -1,4 +1,32 @@
-name: deploy.yml
+name: Deploy to Production
+
 on:
+  push:
+    branches: [ "main" ]  # Trigger only on push to main branch
 
 jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.DO_HOST }}
+          username: ${{ secrets.DO_USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 22
+          script: |
+            # 1. Go to the project folder
+            cd course-platform # <--- MAKE SURE THIS MATCHES YOUR FOLDER NAME ON VPS
+            
+            # 2. Pull the latest code
+            git pull origin main
+            
+            # 3. Rebuild and restart containers
+            # We use 'up -d --build' which is smarter than 'down' + 'up'
+            # It only recreates containers that have changed.
+            docker-compose -f docker-compose.prod.yml up -d --build
+            
+            # 4. Cleanup unused images to save disk space (Optional but recommended)
+            docker image prune -f
