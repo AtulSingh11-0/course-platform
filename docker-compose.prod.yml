@@ -2,28 +2,13 @@ version: '3.8'
 
 services:
   # ---------------------------------------------------------
-  # 1. NGINX (Public Entry Point - Port 80)
-  # ---------------------------------------------------------
-  nginx:
-    image: nginx:alpine
-    container_name: course-nginx
-    ports:
-      - "80:80"
-    volumes:
-      - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf
-    depends_on:
-      - app
-    restart: always
-
-  # ---------------------------------------------------------
-  # 2. Spring Boot Application
+  # 1. Spring Boot Application
   # ---------------------------------------------------------
   app:
     build: .
     container_name: course-platform-api
     environment:
       - SPRING_PROFILES_ACTIVE=prod
-      # Injecting Env Vars from the server's .env file
       - DATABASE_URL=jdbc:postgresql://postgres:5432/${POSTGRES_DB}
       - DATABASE_USERNAME=${POSTGRES_USER}
       - DATABASE_PASSWORD=${POSTGRES_PASSWORD}
@@ -32,6 +17,8 @@ services:
       - ELASTICSEARCH_PASSWORD=
       - JWT_SECRET=${JWT_SECRET}
       - JWT_EXPIRATION_MS=${JWT_EXPIRATION_MS}
+    ports:
+      - "127.0.0.1:8080:8080"  # BIND TO LOCALHOST ONLY
     restart: always
     depends_on:
       postgres:
