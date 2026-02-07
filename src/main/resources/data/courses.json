@@ -1,0 +1,214 @@
+{
+  "courses": [
+    {
+      "id": "physics-101",
+      "title": "Introduction to Physics",
+      "description": "Fundamental concepts of motion, forces, and energy.",
+      "topics": [
+        {
+          "id": "kinematics",
+          "title": "Kinematics",
+          "subtopics": [
+            {
+              "id": "speed",
+              "title": "Speed",
+              "content": "Speed is the distance travelled per unit time. It is a **scalar quantity**, meaning it has magnitude but no direction.\n\n## Formula\n\n```\nSpeed = Distance / Time\n```\n\n## Units\n\n- Meters per second (m/s)\n- Kilometers per hour (km/h)\n- Miles per hour (mph)\n\nSpeed tells us how fast an object is moving, but not the direction of motion."
+            },
+            {
+              "id": "velocity",
+              "title": "Velocity",
+              "content": "## Understanding Velocity\n\nVelocity is the **rate of change** of displacement with respect to time. Unlike speed, velocity is a vector quantity and includes both magnitude and direction.\n\n## Key Characteristics\n\n- **Vector quantity**: Has both magnitude and direction\n- **Units**: meters per second (m/s), kilometers per hour (km/h)\n- **Can be negative**: Indicates direction of motion\n\n## Mathematical Definition\n\nVelocity is calculated as:\n\nv = Δx / Δt\n\nWhere:\n- v = velocity\n- Δx = change in position (displacement)\n- Δt = change in time\n\n## Velocity vs Speed\n\nWhile speed only tells us how fast something is moving, velocity tells us both how fast and in which direction. For example, a car traveling north at 60 km/h has a different velocity than a car traveling south at 60 km/h, even though they have the same speed.\n\n## Applications\n\nUnderstanding velocity is crucial in physics and engineering. It's used to analyze motion in mechanics, calculate momentum, and is fundamental to understanding acceleration and force."
+            },
+            {
+              "id": "acceleration",
+              "title": "Acceleration",
+              "content": "Acceleration is defined as the **rate of change** of velocity with respect to time. It is a vector quantity that describes how quickly an object's velocity is changing.\n\n## Formula\n\nIt can be calculated using the formula:\n\n```\na = (v₂ - v₁) / t\n```\n\nWhere:\n- a = acceleration\n- v₂ = final velocity\n- v₁ = initial velocity  \n- t = time interval\n\n## Types of Acceleration\n\nAcceleration can be:\n- **Positive**: Object is speeding up\n- **Negative** (deceleration): Object is slowing down\n- **Zero**: Object is moving at constant velocity"
+            }
+          ]
+        },
+        {
+          "id": "dynamics",
+          "title": "Dynamics",
+          "subtopics": [
+            {
+              "id": "force",
+              "title": "Force",
+              "content": "## What is Force?\n\nA force is a **push or a pull** that can change the motion or shape of an object. Force is a vector quantity with both magnitude and direction.\n\n## Effects of Force\n\nForces can cause objects to:\n- Accelerate (speed up)\n- Decelerate (slow down)\n- Stop completely\n- Change direction\n- Change shape (deformation)\n\n## Types of Forces\n\n- **Contact forces**: Friction, tension, normal force\n- **Non-contact forces**: Gravity, magnetic force, electric force\n\n## Measurement\n\nForce is measured in **Newtons (N)** in the SI system, where 1 N = 1 kg⋅m/s²."
+            },
+            {
+              "id": "newtons-first-law",
+              "title": "Newton's First Law",
+              "content": "## Newton's First Law of Motion\n\nNewton's First Law states that an object remains at rest or in uniform motion unless acted upon by an external force. This fundamental principle is also known as the **law of inertia**.\n\n## Understanding Inertia\n\nInertia is the tendency of an object to resist changes in its state of motion. The more massive an object is, the greater its inertia, and the more force is required to change its motion.\n\n## Real-World Examples\n\n1. **Passengers in a car**: When a car suddenly stops, passengers continue moving forward due to inertia\n2. **Objects on a table**: A book on a table remains at rest until someone picks it up\n3. **Space travel**: Spacecraft continue moving through space without engines once they reach their velocity\n\n## Historical Context\n\nThis law was part of Newton's groundbreaking work *Philosophiæ Naturalis Principia Mathematica* published in 1687. It challenged the ancient belief that objects naturally come to rest and laid the foundation for classical mechanics.\n\n## Connection to Other Laws\n\nThe First Law sets the stage for understanding force and acceleration, which are formalized in Newton's Second Law (F = ma). Together, these laws of motion form the basis for analyzing mechanical systems."
+            },
+            {
+              "id": "newtons-second-law",
+              "title": "Newton's Second Law",
+              "content": "## Newton's Second Law of Motion\n\nNewton's Second Law states that the acceleration of an object is **directly proportional** to the net force acting on it and **inversely proportional** to its mass.\n\n## The Famous Equation\n\n```\nF = ma\n```\n\nWhere:\n- F = net force (Newtons)\n- m = mass (kilograms)\n- a = acceleration (m/s²)\n\n## What This Means\n\n1. **More force → more acceleration**: Pushing harder makes an object accelerate faster\n2. **More mass → less acceleration**: Heavier objects are harder to accelerate\n3. **Force and acceleration are in the same direction**: The object accelerates in the direction of the net force\n\n## Practical Examples\n\n- A small car accelerates faster than a truck with the same engine (less mass)\n- A rocket needs enormous force to accelerate because of its large mass\n- Kicking a soccer ball (small mass) produces greater acceleration than kicking a bowling ball with the same force"
+            }
+          ]
+        },
+        {
+          "id": "work-and-energy",
+          "title": "Work and Energy",
+          "subtopics": [
+            {
+              "id": "work",
+              "title": "Work",
+              "content": "## Definition of Work\n\nWork is said to be done when a **force causes a displacement** of an object. In physics, work has a very specific meaning that differs from everyday usage.\n\n## Formula\n\n```\nW = F × d × cos(θ)\n```\n\nWhere:\n- W = work done (Joules)\n- F = applied force\n- d = displacement\n- θ = angle between force and displacement\n\nFor force in the direction of motion: **W = F × d**\n\n## Key Points\n\n- Work is a **scalar quantity** (has magnitude but no direction)\n- Work can be positive, negative, or zero\n- No displacement = no work done (holding a heavy object stationary does no work in physics)\n- Unit: Joule (J), where 1 J = 1 N⋅m"
+            },
+            {
+              "id": "kinetic-energy",
+              "title": "Kinetic Energy",
+              "content": "Kinetic energy is the energy possessed by an object due to its **motion**. Any moving object has kinetic energy.\n\n## Formula\n\n```\nKE = ½mv²\n```\n\nWhere:\n- KE = kinetic energy (Joules)\n- m = mass (kg)\n- v = velocity (m/s)\n\n## Important Observations\n\n- Kinetic energy depends on the **square of velocity** - doubling speed quadruples the kinetic energy\n- Kinetic energy is always positive (velocity is squared)\n- A stationary object has zero kinetic energy\n\n## Examples\n\n- A moving car has kinetic energy that must be dissipated when braking\n- Wind turbines convert the kinetic energy of moving air into electricity\n- A thrown ball has kinetic energy that can break a window"
+            },
+            {
+              "id": "potential-energy",
+              "title": "Potential Energy",
+              "content": "Potential energy is the energy **stored** in an object due to its position or configuration. It represents the potential to do work.\n\n## Types of Potential Energy\n\n### Gravitational Potential Energy\n\n```\nPE = mgh\n```\n\nWhere:\n- PE = potential energy (Joules)\n- m = mass (kg)\n- g = gravitational acceleration (9.8 m/s²)\n- h = height above reference point (m)\n\n### Other Types\n\n- **Elastic potential energy**: Stored in stretched or compressed springs\n- **Chemical potential energy**: Stored in chemical bonds\n- **Electrical potential energy**: Stored in electric fields\n\n## Energy Conversion\n\nPotential energy can be converted to kinetic energy and vice versa. For example, a roller coaster at the top of a hill has maximum potential energy, which converts to kinetic energy as it descends."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "math-101",
+      "title": "Basic Mathematics for Problem Solving",
+      "description": "Core mathematical concepts used in science and everyday problem solving.",
+      "topics": [
+        {
+          "id": "algebra-basics",
+          "title": "Algebra Basics",
+          "subtopics": [
+            {
+              "id": "variables-and-expressions",
+              "title": "Variables and Expressions",
+              "content": "## Variables in Algebra\n\nVariables are **symbols** (usually letters like x, y, z) used to represent unknown or changing values. They allow us to write general mathematical relationships.\n\n## Algebraic Expressions\n\nAlgebraic expressions combine variables, numbers, and operations to describe mathematical relationships.\n\n### Examples\n\n- `2x + 5` - A linear expression\n- `x² - 3x + 2` - A quadratic expression\n- `(a + b) / 2` - Average of two numbers\n\n## Terms and Coefficients\n\nIn the expression `3x² + 5x - 7`:\n- **Terms**: 3x², 5x, and -7\n- **Coefficients**: 3 and 5 (numbers multiplying variables)\n- **Constant**: -7 (term without a variable)\n\n## Why Use Variables?\n\nVariables let us:\n- Express general formulas (area = length × width)\n- Solve problems with unknown quantities\n- Model real-world situations mathematically"
+            },
+            {
+              "id": "linear-equations",
+              "title": "Linear Equations",
+              "content": "A linear equation is an equation in which the **highest power of the variable is one**. These equations graph as straight lines.\n\n## Standard Forms\n\n**One variable**: `ax + b = 0`\n\n**Two variables**: `y = mx + b` (slope-intercept form)\n\nWhere:\n- m = slope (rate of change)\n- b = y-intercept (starting value)\n\n## Examples\n\n```\n2x + 3 = 11\ny = 2x - 5\n3x + 4y = 12\n```\n\n## Solving Linear Equations\n\nSolve `2x + 3 = 11`:\n1. Subtract 3 from both sides: `2x = 8`\n2. Divide both sides by 2: `x = 4`\n\n## Applications\n\nLinear equations model many real-world relationships:\n- Distance = speed × time\n- Cost = price per unit × quantity\n- Temperature conversion formulas"
+            },
+            {
+              "id": "quadratic-equations",
+              "title": "Quadratic Equations",
+              "content": "Quadratic equations are equations of **degree two** (the highest power is 2). They create parabolic curves when graphed.\n\n## Standard Form\n\n```\nax² + bx + c = 0\n```\n\nWhere a ≠ 0, and a, b, c are constants.\n\n## Solving Methods\n\n1. **Factoring**: `x² + 5x + 6 = 0` → `(x + 2)(x + 3) = 0`\n2. **Quadratic formula**: `x = (-b ± √(b² - 4ac)) / 2a`\n3. **Completing the square**\n\n## Number of Solutions\n\nThe discriminant `b² - 4ac` determines solutions:\n- Positive: Two real solutions\n- Zero: One real solution\n- Negative: No real solutions (two complex solutions)\n\n## Real-World Applications\n\n- Projectile motion (trajectory of thrown objects)\n- Area optimization problems\n- Profit maximization in business"
+            }
+          ]
+        },
+        {
+          "id": "functions",
+          "title": "Functions",
+          "subtopics": [
+            {
+              "id": "what-is-a-function",
+              "title": "What is a Function?",
+              "content": "## Definition\n\nA function is a relationship that assigns **exactly one output** to each input. Think of it as a machine: you put something in, and you get exactly one thing out.\n\n## Notation\n\n`f(x) = 2x + 1`\n\nThis means:\n- Function name: f\n- Input variable: x\n- Output: 2x + 1\n\n## Examples\n\n```\nf(x) = x²\nf(3) = 9\nf(-2) = 4\n```\n\n## Domain and Range\n\n- **Domain**: All possible input values\n- **Range**: All possible output values\n\n## Real-World Functions\n\n- Temperature as a function of time\n- Distance as a function of speed and time\n- Price as a function of quantity\n- Population as a function of year\n\nFunctions are fundamental to modeling and understanding relationships in mathematics, science, and engineering."
+            },
+            {
+              "id": "graph-of-a-function",
+              "title": "Graph of a Function",
+              "content": "The graph of a function **visually represents** the relationship between inputs (x-axis) and outputs (y-axis).\n\n## Reading Graphs\n\nEach point (x, y) on the graph means:\n- Input x produces output y\n- Written as f(x) = y\n\n## Common Function Shapes\n\n- **Linear**: Straight line (constant rate of change)\n- **Quadratic**: Parabola (U-shaped curve)\n- **Exponential**: Rapid growth or decay\n- **Periodic**: Repeating patterns (sine, cosine)\n\n## What Graphs Tell Us\n\nGraphs help us understand:\n- **Trends**: Is the function increasing or decreasing?\n- **Rates of change**: How quickly does output change?\n- **Maximum/minimum values**: Peaks and valleys\n- **Intercepts**: Where the graph crosses axes\n\n## Applications\n\nGraphs are used everywhere:\n- Stock market trends\n- Weather forecasts\n- Scientific data visualization\n- Engineering design analysis"
+            },
+            {
+              "id": "rate-of-change",
+              "title": "Rate of Change",
+              "content": "## What is Rate of Change?\n\nThe **rate of change** describes how one quantity changes with respect to another. It is a fundamental concept that connects mathematics to real-world phenomena.\n\n## Mathematical Representation\n\nThe average rate of change between two points is:\n\n```\nRate of change = Δy / Δx = (y₂ - y₁) / (x₂ - x₁)\n```\n\n## Examples in Different Fields\n\n### Physics\n- **Velocity**: Rate of change of position with respect to time\n- **Acceleration**: Rate of change of velocity with respect to time\n- **Power**: Rate of change of energy with respect to time\n\n### Economics\n- **Inflation rate**: Rate of change of prices over time\n- **Growth rate**: Rate of change of GDP or population\n\n### Biology\n- **Population growth**: Rate of change of organism count\n- **Reaction rates**: Rate of change of chemical concentrations\n\n## Connection to Calculus\n\nThe instantaneous rate of change is represented by the derivative in calculus. This concept is essential for understanding motion, optimization, and dynamic systems."
+            }
+          ]
+        },
+        {
+          "id": "calculus-intuition",
+          "title": "Calculus Intuition",
+          "subtopics": [
+            {
+              "id": "limits",
+              "title": "Limits",
+              "content": "## Understanding Limits\n\nA limit describes the value that a function **approaches** as the input approaches a certain value. Limits are the foundation of calculus.\n\n## Notation\n\n```\nlim (x→a) f(x) = L\n```\n\nThis reads: \"The limit of f(x) as x approaches a equals L\"\n\n## Why Limits Matter\n\nLimits help us:\n- Understand behavior near points where functions aren't defined\n- Define derivatives and integrals rigorously\n- Analyze continuity of functions\n- Handle infinity in a meaningful way\n\n## Simple Example\n\nConsider `f(x) = (x² - 1) / (x - 1)` when x approaches 1:\n- Can't plug in x = 1 directly (division by zero)\n- But we can simplify: `(x² - 1) / (x - 1) = (x + 1)(x - 1) / (x - 1) = x + 1`\n- As x → 1, the limit is 2\n\nLimits let us handle situations where direct substitution fails."
+            },
+            {
+              "id": "derivatives",
+              "title": "Derivatives",
+              "content": "## Understanding Derivatives\n\nA derivative represents the **rate of change** of a function with respect to its input variable. It tells us how a function's output changes as we make small changes to the input.\n\n## Notation\n\nThe derivative of a function f(x) can be written as:\n- f'(x) (Lagrange notation)\n- df/dx (Leibniz notation)\n- dy/dx (when y = f(x))\n\n## Geometric Interpretation\n\nThe derivative at a point represents the **slope of the tangent line** to the function's curve at that point. A positive derivative means the function is increasing, while a negative derivative means it's decreasing.\n\n## Applications in Physics\n\nDerivatives are fundamental to physics:\n\n1. **Velocity**: The derivative of position with respect to time\n   - v(t) = dx/dt\n\n2. **Acceleration**: The derivative of velocity with respect to time\n   - a(t) = dv/dt = d²x/dt²\n\n3. **Force and Motion**: Newton's laws use derivatives to relate force, mass, and acceleration\n\n## Common Derivatives\n\n- Derivative of x² is 2x\n- Derivative of sin(x) is cos(x)\n- Derivative of eˣ is eˣ\n\n## Real-World Impact\n\nDerivatives help us optimize processes, predict changes, model motion, and understand dynamic systems in engineering, economics, and natural sciences."
+            },
+            {
+              "id": "real-world-examples",
+              "title": "Real-World Examples",
+              "content": "## Calculus in the Real World\n\nCalculus concepts are used to model **motion, growth, and change** in real-world systems. Here are some practical applications:\n\n## Physics and Engineering\n\n- **Rocket trajectories**: Calculating optimal paths using derivatives and integrals\n- **Electrical circuits**: Analyzing current and voltage changes over time\n- **Structural engineering**: Optimizing material usage and stress distribution\n- **Fluid dynamics**: Modeling water flow and air resistance\n\n## Economics and Business\n\n- **Marginal cost/revenue**: Using derivatives to find optimal production levels\n- **Compound interest**: Continuous growth models\n- **Supply and demand**: Finding equilibrium points\n\n## Medicine and Biology\n\n- **Drug dosage**: Modeling how medication concentration changes in the bloodstream\n- **Population dynamics**: Predicting growth rates of species\n- **Epidemic modeling**: Tracking disease spread\n\n## Technology\n\n- **Machine learning**: Gradient descent for optimization\n- **Computer graphics**: Rendering curves and surfaces\n- **Signal processing**: Analyzing audio and video data\n\nCalculus is everywhere - from the GPS in your phone to the algorithms that recommend your next video!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cs-101",
+      "title": "Introduction to Computer Science",
+      "description": "Foundational concepts of programming, algorithms, and data structures.",
+      "topics": [
+        {
+          "id": "programming-basics",
+          "title": "Programming Basics",
+          "subtopics": [
+            {
+              "id": "what-is-a-program",
+              "title": "What is a Program?",
+              "content": "## Definition\n\nA program is a **set of instructions** that tells a computer what to do. Programs are written to solve problems or automate tasks.\n\n## Components of a Program\n\n1. **Input**: Data the program receives\n2. **Processing**: Operations performed on the data\n3. **Output**: Results produced by the program\n4. **Storage**: Saving data for later use\n\n## Simple Example\n\n```python\n# A simple program to greet a user\nname = input(\"What is your name? \")  # Input\ngreeting = \"Hello, \" + name + \"!\"    # Processing\nprint(greeting)                       # Output\n```\n\n## From Code to Execution\n\n1. **Write** code in a programming language (Python, Java, etc.)\n2. **Compile or interpret** code into machine instructions\n3. **Execute** the program on a computer\n\n## Why Write Programs?\n\nPrograms help us:\n- Automate repetitive tasks\n- Process large amounts of data quickly\n- Solve complex problems\n- Create tools and applications\n- Control hardware and devices"
+            },
+            {
+              "id": "variables-and-data-types",
+              "title": "Variables and Data Types",
+              "content": "## Variables\n\nVariables are named containers that store data values in a program. Think of them as labeled boxes where you can store information and retrieve it later.\n\n## Common Data Types\n\n### Primitive Types\n\n1. **Integer**: Whole numbers\n   ```python\n   age = 25\n   count = -10\n   ```\n\n2. **Float/Double**: Decimal numbers\n   ```python\n   price = 19.99\n   temperature = -3.5\n   ```\n\n3. **String**: Text data\n   ```python\n   name = \"Alice\"\n   message = \"Hello, World!\"\n   ```\n\n4. **Boolean**: True or false values\n   ```python\n   is_active = True\n   has_permission = False\n   ```\n\n### Composite Types\n\n- **Arrays/Lists**: Ordered collections of elements\n- **Objects/Dictionaries**: Key-value pairs\n- **Sets**: Unordered collections of unique elements\n\n## Type Systems\n\n**Statically typed** languages (Java, C++) require declaring variable types:\n```java\nint count = 5;\nString name = \"Bob\";\n```\n\n**Dynamically typed** languages (Python, JavaScript) infer types:\n```python\ncount = 5  # automatically an integer\nname = \"Bob\"  # automatically a string\n```\n\n## Why Data Types Matter\n\nData types help:\n- Prevent errors (can't add a number to text)\n- Optimize memory usage\n- Make code more readable and maintainable\n- Enable better tooling and IDE support"
+            },
+            {
+              "id": "control-flow",
+              "title": "Control Flow",
+              "content": "## What is Control Flow?\n\nControl flow determines the **order in which instructions are executed** in a program. By default, code runs line by line, but control flow statements let us change this.\n\n## Types of Control Flow\n\n### Conditional Statements\n\nExecute code based on conditions:\n\n```python\nif temperature > 30:\n    print(\"It's hot!\")\nelif temperature > 20:\n    print(\"It's warm\")\nelse:\n    print(\"It's cold\")\n```\n\n### Loops\n\nRepeat code multiple times:\n\n```python\n# For loop - iterate a specific number of times\nfor i in range(5):\n    print(i)\n\n# While loop - repeat while condition is true\ncount = 0\nwhile count < 5:\n    print(count)\n    count += 1\n```\n\n### Jump Statements\n\n- **break**: Exit a loop early\n- **continue**: Skip to next iteration\n- **return**: Exit a function\n\n## Why Control Flow Matters\n\nControl flow allows programs to:\n- Make decisions based on data\n- Repeat operations efficiently\n- Handle different scenarios\n- Create complex behavior from simple rules"
+            }
+          ]
+        },
+        {
+          "id": "algorithms",
+          "title": "Algorithms",
+          "subtopics": [
+            {
+              "id": "what-is-an-algorithm",
+              "title": "What is an Algorithm?",
+              "content": "## Definition\n\nAn algorithm is a **step-by-step procedure** for solving a problem or accomplishing a task. It's like a recipe in cooking - a precise set of instructions that, when followed, produces a desired result.\n\n## Essential Properties\n\nA good algorithm must have these characteristics:\n\n1. **Clear and unambiguous**: Each step must be precisely defined\n2. **Finite**: Must terminate after a finite number of steps\n3. **Effective**: Each step must be basic enough to be executed\n4. **Input**: Takes zero or more inputs\n5. **Output**: Produces at least one output\n\n## Example: Finding Maximum Number\n\nHere's a simple algorithm to find the largest number in a list:\n\n```\n1. Set max = first number in list\n2. For each remaining number in list:\n   - If number > max, set max = number\n3. Return max\n```\n\n## Algorithms in Daily Life\n\n- **GPS navigation**: Finds shortest route between locations\n- **Search engines**: Rank and retrieve relevant web pages\n- **Social media feeds**: Determine which posts to show you\n- **Recommendation systems**: Suggest products, movies, or music\n\n## Why Study Algorithms?\n\nUnderstanding algorithms helps you:\n- Write more efficient code\n- Solve complex problems systematically\n- Optimize resource usage (time, memory, energy)\n- Think computationally about real-world challenges"
+            },
+            {
+              "id": "time-complexity",
+              "title": "Time Complexity",
+              "content": "## Understanding Time Complexity\n\nTime complexity measures how the **runtime of an algorithm grows** with input size. It helps us compare the efficiency of different algorithms.\n\n## Big O Notation\n\nWe use Big O notation to describe time complexity:\n\n- **O(1)** - Constant time: Same time regardless of input size\n- **O(log n)** - Logarithmic: Very efficient, doubles input but adds one step\n- **O(n)** - Linear: Time grows proportionally with input\n- **O(n log n)** - Linearithmic: Efficient sorting algorithms\n- **O(n²)** - Quadratic: Nested loops, slower for large inputs\n- **O(2ⁿ)** - Exponential: Very slow, doubles time when input increases by 1\n\n## Examples\n\n```python\n# O(1) - Constant time\ndef get_first(array):\n    return array[0]\n\n# O(n) - Linear time\ndef find_max(array):\n    max_val = array[0]\n    for num in array:\n        if num > max_val:\n            max_val = num\n    return max_val\n\n# O(n²) - Quadratic time\ndef bubble_sort(array):\n    for i in range(len(array)):\n        for j in range(len(array) - 1):\n            if array[j] > array[j + 1]:\n                array[j], array[j + 1] = array[j + 1], array[j]\n```\n\n## Why It Matters\n\nFor small inputs, any algorithm works. But for large datasets:\n- O(n) algorithm on 1 million items: ~1 second\n- O(n²) algorithm on 1 million items: ~11 days!\n\nChoosing efficient algorithms is crucial for scalable software."
+            },
+            {
+              "id": "searching-vs-sorting",
+              "title": "Searching vs Sorting",
+              "content": "## Two Fundamental Operations\n\nSearching and sorting are fundamental operations in computer science that work hand-in-hand.\n\n## Searching Algorithms\n\n**Goal**: Find a specific element in a collection\n\n### Linear Search - O(n)\n```python\ndef linear_search(array, target):\n    for i in range(len(array)):\n        if array[i] == target:\n            return i\n    return -1\n```\n\n### Binary Search - O(log n)\nRequires sorted array:\n```python\ndef binary_search(sorted_array, target):\n    left, right = 0, len(sorted_array) - 1\n    while left <= right:\n        mid = (left + right) // 2\n        if sorted_array[mid] == target:\n            return mid\n        elif sorted_array[mid] < target:\n            left = mid + 1\n        else:\n            right = mid - 1\n    return -1\n```\n\n## Sorting Algorithms\n\n**Goal**: Arrange elements in order\n\n- **Bubble Sort**: O(n²) - Simple but slow\n- **Merge Sort**: O(n log n) - Efficient and stable\n- **Quick Sort**: O(n log n) average - Fast in practice\n\n## Why Both Matter\n\n- Sorted data enables faster searching (binary search)\n- Many algorithms require sorted input\n- Databases use sorting and searching extensively\n- Together they form the basis for efficient data processing"
+            }
+          ]
+        },
+        {
+          "id": "data-structures",
+          "title": "Data Structures",
+          "subtopics": [
+            {
+              "id": "arrays",
+              "title": "Arrays",
+              "content": "## What are Arrays?\n\nArrays store elements in **contiguous memory locations**, allowing fast access using an index. They are one of the most fundamental data structures.\n\n## Characteristics\n\n- **Fixed size**: Size is determined when created (in most languages)\n- **Indexed access**: Access any element in O(1) time\n- **Homogeneous**: Typically store elements of the same type\n- **Zero-indexed**: First element is at index 0\n\n## Example\n\n```python\n# Creating and using arrays\nnumbers = [10, 20, 30, 40, 50]\n\n# Access by index - O(1)\nfirst = numbers[0]    # 10\nlast = numbers[4]     # 50\n\n# Modify element\nnumbers[2] = 35\n\n# Iterate through array\nfor num in numbers:\n    print(num)\n```\n\n## Time Complexity\n\n- **Access**: O(1) - Direct index lookup\n- **Search**: O(n) - Must check each element\n- **Insert/Delete**: O(n) - May need to shift elements\n\n## When to Use Arrays\n\nArrays are ideal when:\n- You know the size in advance\n- You need fast random access\n- Memory efficiency is important\n- Elements are accessed by position"
+            },
+            {
+              "id": "lists",
+              "title": "Lists",
+              "content": "## Understanding Lists\n\nLists store **ordered collections** of elements with dynamic resizing capabilities. Unlike arrays, lists can grow and shrink as needed.\n\n## Types of Lists\n\n### Array-Based Lists (Dynamic Arrays)\n- Backed by resizable arrays\n- Fast random access: O(1)\n- Example: Python lists, Java ArrayList\n\n### Linked Lists\n- Elements stored in nodes with pointers\n- Efficient insertion/deletion: O(1) at known position\n- Sequential access: O(n)\n\n## Example Operations\n\n```python\n# Python list (dynamic array)\nfruits = [\"apple\", \"banana\"]\n\n# Append - O(1) average\nfruits.append(\"orange\")\n\n# Insert at position - O(n)\nfruits.insert(1, \"mango\")\n\n# Remove - O(n)\nfruits.remove(\"banana\")\n\n# Access by index - O(1)\nfirst_fruit = fruits[0]\n```\n\n## Lists vs Arrays\n\n| Feature | Array | List |\n|---------|-------|------|\n| Size | Fixed | Dynamic |\n| Memory | Contiguous | May be scattered (linked) |\n| Access | O(1) | O(1) or O(n) |\n| Insert/Delete | O(n) | O(1) to O(n) |\n\n## When to Use Lists\n\n- Size is unknown or changes frequently\n- Frequent insertions/deletions\n- Need flexibility over maximum performance"
+            },
+            {
+              "id": "stacks",
+              "title": "Stacks",
+              "content": "## What is a Stack?\n\nA stack is a linear data structure that follows the **Last In, First Out (LIFO)** principle. Think of it like a stack of plates - you can only add or remove plates from the top.\n\n## Core Operations\n\n1. **Push**: Add an element to the top of the stack\n2. **Pop**: Remove and return the top element\n3. **Peek/Top**: View the top element without removing it\n4. **isEmpty**: Check if the stack is empty\n\n## Example Implementation\n\n```python\nclass Stack:\n    def __init__(self):\n        self.items = []\n    \n    def push(self, item):\n        self.items.append(item)\n    \n    def pop(self):\n        if not self.is_empty():\n            return self.items.pop()\n    \n    def peek(self):\n        if not self.is_empty():\n            return self.items[-1]\n    \n    def is_empty(self):\n        return len(self.items) == 0\n```\n\n## Real-World Applications\n\n- **Browser history**: Back button uses a stack of visited pages\n- **Undo functionality**: Text editors store actions in a stack\n- **Function calls**: Programming languages use a call stack to track function execution\n- **Expression evaluation**: Compilers use stacks to parse mathematical expressions\n\n## Time Complexity\n\n- Push: O(1)\n- Pop: O(1)\n- Peek: O(1)\n- Search: O(n)\n\nStacks are efficient for adding and removing elements, making them ideal for scenarios where you need quick access to the most recently added item."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/course_platform_local
+    username: postgres
+    password: 12345
+    hikari:
+      maximum-pool-size: 5
+      minimum-idle: 2
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+  elasticsearch:
+    uris: https://localhost:9200
+    username: elastic
+    password: 123456
+    socket-timeout: 30s
+    connection-timeout: 5s
+
+# JWT Configuration - local testing
+jwt:
+  secret: ${JWT_SECRET:local_jwt_secret_key}
+  expiration-ms: 604800000 # 7 days for local testing
+
+# Logging Configuration - verbose for local development
+logging:
+  level:
+    root: INFO
+    com.courseplatform: DEBUG
+    org.springframework.web: DEBUG
+    org.springframework.security: DEBUG
+    org.hibernate.sql: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+
+# Server Configuration
+server:
+  port: 8080
+  compression:
+    enabled: false

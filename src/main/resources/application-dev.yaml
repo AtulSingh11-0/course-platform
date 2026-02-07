@@ -1,0 +1,46 @@
+spring:
+  datasource:
+    url: ${DATABASE_URL:jdbc:postgresql://postgres:5432/course_platform_dev}
+    username: ${DATABASE_USERNAME:postgres}
+    password: ${DATABASE_PASSWORD:12345}
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 5
+
+  elasticsearch:
+    uris: ${ELASTICSEARCH_URIS:http://elasticsearch:9200}
+    username: ${ELASTICSEARCH_USERNAME:elastic}
+    password: ${ELASTICSEARCH_PASSWORD:123456}
+    socket-timeout: 30s
+    connection-timeout: 5s
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+
+# JWT Configuration - dev
+jwt:
+  secret: ${JWT_SECRET:b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZWQyNTUxOQAAACAYKMLKFGNRgpVh0sVx6O7W3tZJ/UZKtnZMlUQLgvk7IwAAAJhaC6DbWgug2wAAAAtzc2gtZWQyNTUxOQAAACAYKMLKFGNRgpVh0sVx6O7W3tZJ/UZKtnZMlUQLgvk7IwAAAED+AlJZQRM5VO2xSrReUTY59ex3mYTSy4FJG6VApTTUMRgowsoUY1GClWHSxXHo7tbe1kn9Rkq2dkyVRAuC+TsjAAAAEGNvY2F0QEF0dUxpc05vb0IBAgMEBQ==}
+  expiration-ms: ${JWT_EXPIRATION_MS:86400000} # 1 day
+
+# Logging Configuration - moderate for dev
+logging:
+  level:
+    root: WARN
+    com.courseplatform: ${LOG_LEVEL_APP:INFO}
+    org.springframework.web: ${LOG_LEVEL_WEB:INFO}
+    org.springframework.security: ${LOG_LEVEL_SECURITY:INFO}
+    org.hibernate.sql: ${LOG_LEVEL_HIBERNATE_SQL:WARN}
+    org.hibernate.type.descriptor.sql.BasicBinder: ${LOG_LEVEL_HIBERNATE_BINDER:WARN}
+
+# Server Configuration
+server:
+  port: ${SERVER_PORT:8080}
+  compression:
+    enabled: true
+    mime-types: application/json,application/xml,text/html,text/xml,text/plain,text/css
+    min-response-size: 1024
