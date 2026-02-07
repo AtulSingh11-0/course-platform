@@ -1,0 +1,78 @@
+services:
+  # ---------------------------------------------------------
+  # 1. Spring Boot Application
+  # ---------------------------------------------------------
+  app:
+    build: .
+    container_name: course-platform-api
+    ports:
+      - "8080:8080"
+    environment:
+      # Spring  Profile
+      - SPRING_PROFILES_ACTIVE=dev
+
+      # Postgres Configuration
+      - DATABASE_URL=jdbc:postgresql://postgres:5432/course_platform_dev
+      - DATABASE_USERNAME=postgres
+      - DATABASE_PASSWORD=12345
+
+      # Elasticsearch Configuration
+      - ELASTICSEARCH_URIS=http://elasticsearch:9200
+      - ELASTICSEARCH_USERNAME=
+      - ELASTICSEARCH_PASSWORD=
+
+      # JWT Configuration
+      - JWT_SECRET=BN3WyGF/1kV0r1FFWbzZz0EfzSN5pfCTKnlL6MdKTrDxbu267QVMAp8Hmuo/RZ8zwXJYWtZ66pXXB6+F0E8svDaHsrDL/8rDkQhcDVtnKeiZYi4c1lXjf9iOq3TxLY/4Lkox29xwPWPkU3uBZ0I0BTPaWmlqIFRJicaINORu4P3+MQ2ij+gK2SyvVxnwUgr8tl+N3hGZZZQj6n6ZgTga3V9IDR8M59/BoGOzbqI/hTcw3/KVb/DR6rLVYJYf16gCgSrqPRClHEflLAtQnsny6bA3lbxiqZGlQHNsvkDbf6xj7DorcmTczttlNyeB6RnO4pqpv5+D9o5SkJ/M4BUPoA==
+      - JWT_EXPIRATION_MS=604800000
+    restart: on-failure
+    depends_on:
+      postgres:
+        condition: service_started
+      elasticsearch:
+        condition: service_healthy
+
+  # ---------------------------------------------------------
+  # 2. PostgreSQL Database
+  # ---------------------------------------------------------
+  postgres:
+    image: postgres:15-alpine
+    container_name: course-postgres
+    environment:
+      - POSTGRES_DB=course_platform_dev
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=12345
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./src/main/resources/schema.sql:/docker-entrypoint-initdb.d/schema.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    restart: always
+
+  # ---------------------------------------------------------
+  # 3. Elasticsearch
+  # ---------------------------------------------------------
+  elasticsearch:
+    image: elasticsearch:9.3.0
+    container_name: course-elastic
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false # Disable security for local development
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m" # Limit RAM usage
+    ports:
+      - "9201:9200"
+    volumes:
+      - elastic_data:/usr/share/elasticsearch/data
+    healthcheck:
+      test: [ "CMD-SHELL", "curl -f http://localhost:9200/_cluster/health || exit 1" ]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  postgres_data:
+  elastic_data:
